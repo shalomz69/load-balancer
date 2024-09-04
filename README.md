@@ -4,11 +4,11 @@ Implementation of a load-balancer which uses service registry.
 
 ![img.png](diagram.png)
 
-###Interfaces:
-####interface LoadBalancer: 
+### Interfaces:
+#### interface LoadBalancer: 
 func selectServer(): Server
 
-####interface ServiceRegistry:
+### interface ServiceRegistry:
 
 func registerServer(server: Server): Boolean
 
@@ -17,7 +17,7 @@ func deregisterServer(server: Server): Boolean
 func getServers(): List<Server>
 
 
-####Server model:
+#### Server model:
 
 class Server(val id: String, val address: String)
 Load balancer and service registry should be implemented as two HTTP REST servers.
