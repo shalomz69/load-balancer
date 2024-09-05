@@ -1,11 +1,13 @@
-### Load Balancer
+## Load Balancer
 
 Implementation of a load-balancer which uses service registry.
 
+All implemented from scratch using [spring initializer](https://start.spring.io)
+
 ![img.png](diagram.png)
 
-### Interfaces:
-#### interface LoadBalancer: 
+## Interfaces:
+### interface LoadBalancer: 
 func selectServer(): Server
 
 ### interface ServiceRegistry:
